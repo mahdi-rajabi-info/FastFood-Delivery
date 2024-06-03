@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="font/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-tablet.css">
+    <link rel="stylesheet" href="css/media-laptop.css">
+    <link rel="stylesheet" href="css/media-descktop.css">
+    <title>FastFood-Delivery</title>
+</head>
+<body>
+<div class="container">
+
+    <nav>
+        <div class="nav__logo">
+            <a href="#"><img src="images/lgo.png" alt=""></a>
+        </div>
+        <div class="nav__menu">
+            <ul class="nav__menu__lists">
+                <li class="nav__menu__list">
+                    <div class="nav__menu__item">HomePage</div>
+                </li>
+                <li class="nav__menu__list">
+                    <div class="nav__menu__item">Menu</div>
+                </li>
+                <li class="nav__menu__list">
+                    <div class="nav__menu__item">Sale Off</div>
+                </li>
+                <li class="nav__menu__list">
+                    <div class="nav__menu__item">News</div>
+                </li>
+                <li class="nav__menu__list">
+                    <div class="nav__menu__item">Contact</div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav__btn">
+            <a href="#">Sign-in</a>
+            <a href="#">Logn-in</a>
+        </div>
+        <div class="nav__bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                <path d="M2.91675 20.4166C2.91675 19.6112 3.56967 18.9583 4.37508 18.9583H30.6251C31.4305 18.9583 32.0834 19.6112 32.0834 20.4166C32.0834 21.2221 31.4305 21.875 30.6251 21.875H4.37508C3.56967 21.875 2.91675 21.2221 2.91675 20.4166Z"
+                      fill="#504F4F"/>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M4.375 14.5833C4.375 9.75082 8.29251 5.83331 13.125 5.83331H21.875C26.7075 5.83331 30.625 9.75082 30.625 14.5833C30.625 15.3887 29.9721 16.0416 29.1667 16.0416H5.83333C5.02792 16.0416 4.375 15.3887 4.375 14.5833ZM13.125 11.6666C13.125 12.4721 12.4721 13.125 11.6667 13.125C10.8613 13.125 10.2083 12.4721 10.2083 11.6666C10.2083 10.8612 10.8613 10.2083 11.6667 10.2083C12.4721 10.2083 13.125 10.8612 13.125 11.6666ZM17.5 13.125C18.3054 13.125 18.9583 12.4721 18.9583 11.6666C18.9583 10.8612 18.3054 10.2083 17.5 10.2083C16.6946 10.2083 16.0417 10.8612 16.0417 11.6666C16.0417 12.4721 16.6946 13.125 17.5 13.125ZM24.7917 11.6666C24.7917 12.4721 24.1388 13.125 23.3333 13.125C22.5279 13.125 21.875 12.4721 21.875 11.6666C21.875 10.8612 22.5279 10.2083 23.3333 10.2083C24.1388 10.2083 24.7917 10.8612 24.7917 11.6666Z"
+                      fill="#504F4F"/>
+                <path d="M30.625 26.25C30.625 27.8608 29.3192 29.1666 27.7083 29.1666H7.29167C5.68083 29.1666 4.375 27.8608 4.375 26.25C4.375 25.4446 5.02792 24.7916 5.83333 24.7916H29.1667C29.9721 24.7916 30.625 25.4446 30.625 26.25Z"
+                      fill="#504F4F"/>
+            </svg>
+        </div>
+    </nav>
+    <header>
+        <div class="header__left">
+
+            <div class="header__content__title">
+
+                <h1 class="header__title">Order your favourite food</h1>
+                <p class="header__desc">Hamburger has many flavors, have you tried Cheese Beef Hamburger?</p>
+            </div>
+            <div class="header__content__discount hidden-mobile show-laptop">
+                <div class="header__discount__first">
+                    <span class="total-order">Total Order:</span>
+                    <span class="header__discount__price">5.43$</span>
+                </div>
+                <div class="header__discount__second">
+                    <div class="header__discount__number">
+                        <a class="header__discount__increase" href="#">+</a>
+                        <a class="header__discount__int" href="#">3</a>
+                        <a class="header__discount__decrease" href="#">-</a>
+                    </div>
+                    <button class="header__discount__btn"><span
+                            class="fa fa-solid fa-cart-plus"></span><span>Order Now</span></button>
+                </div>
+            </div>
+        </div>
+        <div class="header__right">
+            <img src="images/Group%2015.png" alt="">
+            <div class="header__message">
+                <div class="message__delivery"></div>
+            </div>
+        </div>
+        <div class="header__content__discount show-mobile hidden-laptop">
+            <div class="header__discount__first">
+                <span class="total-order">Total Order:</span>
+                <span class="header__discount__price">5.43$</span>
+            </div>
+            <div class="header__discount__second">
+                <div class="header__discount__number">
+                    <a class="header__discount__increase" href="#">+</a>
+                    <a class="header__discount__int" href="#">3</a>
+                    <a class="header__discount__decrease" href="#">-</a>
+                </div>
+                <button class="header__discount__btn"><span
+                        class="fa fa-solid fa-cart-plus"></span><span>Order Now</span></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main__menu">
+            <h2 class="main__menu__title">Menu</h2>
+            <div class="main__content__menu">
+
+                <button class="main__menu__btn"><span class="fa fa-coffee"></span><span>Best Seller </span></button>
+                <button class="main__menu__btn"><span class="fa fa-solid fa-coffee"></span><span>Hamberger</span>
+                </button>
+                <button class="main__menu__btn"><span class="fa fa-solid fa-coffee"></span><span>Drink</span></button>
+                <button class="main__menu__btn"><span class="fa fa-solid fa-coffee"></span><span>Dessert</span></button>
+                <button class="main__menu__btn"><span class="fa fa-coffee"></span><span>Fried-Chicken</span></button>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product">
+                <div class="product__header">
+                    <div class="product__label"></div>
+                    <div class="background_khaki"></div>
+                    <img src="images/burger_with_fried_chicken_2021_08_29_03_54_46_utc%201.png" alt=""
+                         class="product__img">
+                </div>
+                <div class="product__main">
+                    <h2 class="product__title">Product_1</h2>
+                    <p class="product__desc">Lorem ipsum dolor sit amet</p>
+                    <div class="product__starts">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star half_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="star_number">(3)</span>
+                    </div>
+                </div>
+                <div class="product__footer">
+                    <span class="product__price">5.43$</span>
+                    <span class="product__cart fa fa-cart-plus"></span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__header">
+                    <div class="product__label"></div>
+                    <div class="background_khaki"></div>
+                    <img src="images/burger_with_fried_chicken_2021_08_29_03_54_46_utc%201.png" alt=""
+                         class="product__img">
+                </div>
+                <div class="product__main">
+                    <h2 class="product__title">Product_1</h2>
+                    <p class="product__desc">Lorem ipsum dolor sit amet</p>
+                    <div class="product__starts">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star half_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="star_number">(3)</span>
+                    </div>
+                </div>
+                <div class="product__footer">
+                    <span class="product__price">5.43$</span>
+                    <span class="product__cart fa fa-cart-plus"></span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__header">
+                    <div class="product__label"></div>
+                    <div class="background_khaki"></div>
+                    <img src="images/burger_with_fried_chicken_2021_08_29_03_54_46_utc%201.png" alt=""
+                         class="product__img">
+                </div>
+                <div class="product__main">
+                    <h2 class="product__title">Product_1</h2>
+                    <p class="product__desc">Lorem ipsum dolor sit amet</p>
+                    <div class="product__starts">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star half_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="star_number">(3)</span>
+                    </div>
+                </div>
+                <div class="product__footer">
+                    <span class="product__price">5.43$</span>
+                    <span class="product__cart fa fa-cart-plus"></span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__header">
+                    <div class="product__label"></div>
+                    <div class="background_khaki"></div>
+                    <img src="images/burger_with_fried_chicken_2021_08_29_03_54_46_utc%201.png" alt=""
+                         class="product__img">
+                </div>
+                <div class="product__main">
+                    <h2 class="product__title">Product_1</h2>
+                    <p class="product__desc">Lorem ipsum dolor sit amet</p>
+                    <div class="product__starts">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star half_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="star_number">(3)</span>
+                    </div>
+                </div>
+                <div class="product__footer">
+                    <span class="product__price">5.43$</span>
+                    <span class="product__cart fa fa-cart-plus"></span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__header">
+                    <div class="product__label"></div>
+                    <div class="background_khaki"></div>
+                    <img src="images/burger_with_fried_chicken_2021_08_29_03_54_46_utc%201.png" alt=""
+                         class="product__img">
+                </div>
+                <div class="product__main">
+                    <h2 class="product__title">Product_1</h2>
+                    <p class="product__desc">Lorem ipsum dolor sit amet</p>
+                    <div class="product__starts">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star half_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="star_number">(3)</span>
+                    </div>
+                </div>
+                <div class="product__footer">
+                    <span class="product__price">5.43$</span>
+                    <span class="product__cart fa fa-cart-plus"></span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__header">
+                    <div class="product__label"></div>
+                    <div class="background_khaki"></div>
+                    <img src="images/burger_with_fried_chicken_2021_08_29_03_54_46_utc%201.png" alt=""
+                         class="product__img">
+                </div>
+                <div class="product__main">
+                    <h2 class="product__title">Product_1</h2>
+                    <p class="product__desc">Lorem ipsum dolor sit amet</p>
+                    <div class="product__starts">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star half_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="star_number">(3)</span>
+                    </div>
+                </div>
+                <div class="product__footer">
+                    <span class="product__price">5.43$</span>
+                    <span class="product__cart fa fa-cart-plus"></span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__header">
+                    <div class="product__label"></div>
+                    <div class="background_khaki"></div>
+                    <img src="images/burger_with_fried_chicken_2021_08_29_03_54_46_utc%201.png" alt=""
+                         class="product__img">
+                </div>
+                <div class="product__main">
+                    <h2 class="product__title">Product_1</h2>
+                    <p class="product__desc">Lorem ipsum dolor sit amet</p>
+                    <div class="product__starts">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star half_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="star_number">(3)</span>
+                    </div>
+                </div>
+                <div class="product__footer">
+                    <span class="product__price">5.43$</span>
+                    <span class="product__cart fa fa-cart-plus"></span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__header">
+                    <div class="product__label"></div>
+                    <div class="background_khaki"></div>
+                    <img src="images/burger_with_fried_chicken_2021_08_29_03_54_46_utc%201.png" alt=""
+                         class="product__img">
+                </div>
+                <div class="product__main">
+                    <h2 class="product__title">Product_1</h2>
+                    <p class="product__desc">Lorem ipsum dolor sit amet</p>
+                    <div class="product__starts">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star half_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="star_number">(3)</span>
+                    </div>
+                </div>
+                <div class="product__footer">
+                    <span class="product__price">5.43$</span>
+                    <span class="product__cart fa fa-cart-plus"></span>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__header">
+                    <div class="product__label"></div>
+                    <div class="background_khaki"></div>
+                    <img src="images/burger_with_fried_chicken_2021_08_29_03_54_46_utc%201.png" alt=""
+                         class="product__img">
+                </div>
+                <div class="product__main">
+                    <h2 class="product__title">Product_1</h2>
+                    <p class="product__desc">Lorem ipsum dolor sit amet</p>
+                    <div class="product__starts">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star half_checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="star_number">(3)</span>
+                    </div>
+                </div>
+                <div class="product__footer">
+                    <span class="product__price">5.43$</span>
+                    <span class="product__cart fa fa-cart-plus"></span>
+                </div>
+            </div>
+        </div>
+        <div class="banners">
+            <div class="banner">
+                <div class="banner__img">
+                    <img src="images/13 (1).png" alt="">
+                </div>
+                <div class="banner__content">
+                    <div class="banner_content__lable">
+                        <p class="banner__lable">Fast-Food</p>
+                        <div class="line"></div>
+                    </div>
+                    <h2 class="banner__title">COMBO FUNNY</h2>
+                    <p class="banner__desc">buy 1 funny combo get 1 coca cola</p>
+                    <div class="banner__part__price">
+                        <s class="banner__offer-price">10.3$</s>
+                        <span class="banner__price">10.1$</span>
+                    </div>
+                    <button class="banner__btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M5.99636 12C5.34406 12 4.86639 12.6144 5.02724 13.2466L6.42495 18.7398C6.76325 20.0693 7.96038 21 9.33231 21H14.6653C16.0384 21 17.2362 20.0678 17.5734 18.7367L18.9645 13.2456C19.1246 12.6137 18.647 12 17.9951 12H5.99636ZM9.00006 16C9.00006 15.4477 9.44777 15 10.0001 15C10.5523 15 11.0001 15.4477 11.0001 16V17C11.0001 17.5523 10.5523 18 10.0001 18C9.44777 18 9.00006 17.5523 9.00006 17V16ZM13.0001 16C13.0001 15.4477 13.4478 15 14.0001 15C14.5523 15 15.0001 15.4477 15.0001 16V17C15.0001 17.5523 14.5523 18 14.0001 18C13.4478 18 13.0001 17.5523 13.0001 17V16Z"
+                                  fill="#F1F1F1"/>
+                            <path d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z"
+                                  fill="#F1F1F1"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z"
+                                  fill="#F1F1F1"/>
+                        </svg>
+                        <span>Order Now</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="banner">
+                <div class="banner__img">
+                    <img src="images/13 (1).png" alt="">
+                </div>
+                <div class="banner__content">
+                    <div class="banner_content__lable">
+                        <p class="banner__lable">Fast-Food</p>
+                        <div class="line"></div>
+                    </div>
+                    <h2 class="banner__title">COMBO FUNNY</h2>
+                    <p class="banner__desc">buy 1 funny combo get 1 coca cola</p>
+                    <div class="banner__part__price">
+                        <s class="banner__offer-price">10.3$</s>
+                        <span class="banner__price">10.1$</span>
+                    </div>
+                    <button class="banner__btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M5.99636 12C5.34406 12 4.86639 12.6144 5.02724 13.2466L6.42495 18.7398C6.76325 20.0693 7.96038 21 9.33231 21H14.6653C16.0384 21 17.2362 20.0678 17.5734 18.7367L18.9645 13.2456C19.1246 12.6137 18.647 12 17.9951 12H5.99636ZM9.00006 16C9.00006 15.4477 9.44777 15 10.0001 15C10.5523 15 11.0001 15.4477 11.0001 16V17C11.0001 17.5523 10.5523 18 10.0001 18C9.44777 18 9.00006 17.5523 9.00006 17V16ZM13.0001 16C13.0001 15.4477 13.4478 15 14.0001 15C14.5523 15 15.0001 15.4477 15.0001 16V17C15.0001 17.5523 14.5523 18 14.0001 18C13.4478 18 13.0001 17.5523 13.0001 17V16Z"
+                                  fill="#F1F1F1"/>
+                            <path d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z"
+                                  fill="#F1F1F1"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z"
+                                  fill="#F1F1F1"/>
+                        </svg>
+                        <span>Order Now</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="banner">
+                <div class="banner__img">
+                    <img src="images/13 (1).png" alt="">
+                </div>
+                <div class="banner__content">
+                    <div class="banner_content__lable">
+                        <p class="banner__lable">Fast-Food</p>
+                        <div class="line"></div>
+                    </div>
+                    <h2 class="banner__title">COMBO FUNNY</h2>
+                    <p class="banner__desc">buy 1 funny combo get 1 coca cola</p>
+                    <div class="banner__part__price">
+                        <s class="banner__offer-price">10.3$</s>
+                        <span class="banner__price">10.1$</span>
+                    </div>
+                    <button class="banner__btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M5.99636 12C5.34406 12 4.86639 12.6144 5.02724 13.2466L6.42495 18.7398C6.76325 20.0693 7.96038 21 9.33231 21H14.6653C16.0384 21 17.2362 20.0678 17.5734 18.7367L18.9645 13.2456C19.1246 12.6137 18.647 12 17.9951 12H5.99636ZM9.00006 16C9.00006 15.4477 9.44777 15 10.0001 15C10.5523 15 11.0001 15.4477 11.0001 16V17C11.0001 17.5523 10.5523 18 10.0001 18C9.44777 18 9.00006 17.5523 9.00006 17V16ZM13.0001 16C13.0001 15.4477 13.4478 15 14.0001 15C14.5523 15 15.0001 15.4477 15.0001 16V17C15.0001 17.5523 14.5523 18 14.0001 18C13.4478 18 13.0001 17.5523 13.0001 17V16Z"
+                                  fill="#F1F1F1"/>
+                            <path d="M3 9C3 8.44772 3.44772 8 4 8H20C20.5523 8 21 8.44772 21 9C21 9.55228 20.5523 10 20 10H4C3.44772 10 3 9.55228 3 9Z"
+                                  fill="#F1F1F1"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M10.7071 4.70711C11.0976 4.31658 11.0976 3.68342 10.7071 3.29289C10.3166 2.90237 9.68342 2.90237 9.29289 3.29289L8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711C8.68342 6.09763 9.31658 6.09763 9.70711 5.70711L10.7071 4.70711ZM13.2929 4.70711C12.9024 4.31658 12.9024 3.68342 13.2929 3.29289C13.6834 2.90237 14.3166 2.90237 14.7071 3.29289L15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711C15.3166 6.09763 14.6834 6.09763 14.2929 5.70711L13.2929 4.70711Z"
+                                  fill="#F1F1F1"/>
+                        </svg>
+                        <span>Order Now</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="propaganda">
+            <div class="curve">
+                <div>
+                    <h5 class="propaganda__first__title">Exclusive offers and more</h5>
+                    <h3 class="propaganda__second__title">MCDONALD’S MOBILE APP</h3>
+                    <p class="propaganda__subtitle">As a global No. 1 fast food brand, McDonald's wishes to bring
+                        customers not only delicious and hygienic food of international standards but also the best
+                        service experience.</p>
+                    <div class="install__buttons">
+                        <button class="install__button">
+                            <div class="install__button__content">
+                                <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.26083 5.8612C7.10805 5.84222 7.82892 6.12739 8.55188 6.4037C8.78617 6.49313 9.01921 6.58636 9.25015 6.68508C9.85973 6.94536 10.4589 6.93776 11.0739 6.67917C11.8182 6.36616 12.5583 6.0156 13.3603 5.88904C15.5572 5.54228 17.3989 6.18771 18.8164 7.95485C18.9327 8.09955 18.9516 8.19193 18.77 8.32017C17.8336 8.98079 17.1082 9.82956 16.7442 10.9297C16.1371 12.7661 16.3739 14.4893 17.5659 16.038C18.0734 16.6973 18.7206 17.193 19.472 17.5427C19.6197 17.6115 19.5532 17.6967 19.526 17.7819C19.2453 18.669 18.867 19.514 18.3934 20.3109C17.842 21.2385 17.2554 22.1451 16.494 22.9179C15.3798 24.0489 14.1607 24.2632 12.7181 23.5967C12.2303 23.3714 11.7399 23.1529 11.2032 23.0711C10.2472 22.9255 9.33257 23.0639 8.45439 23.4714C7.99878 23.6828 7.53354 23.8654 7.03525 23.9574C6.21062 24.1101 5.5136 23.8397 4.88436 23.3288C4.07521 22.672 3.49199 21.8215 2.92132 20.9648C1.69044 19.1175 0.937775 17.0812 0.589683 14.888C0.481741 14.208 0.421494 13.5229 0.436974 12.8348C0.466261 11.5305 0.683819 10.2641 1.29633 9.09722C2.11552 7.53764 3.34597 6.47668 5.05589 6.02108C5.46674 5.9114 5.88679 5.84686 6.26083 5.8612Z"
+                                          fill="white"/>
+                                    <path d="M9.95349 4.88167C9.98278 3.84898 10.4116 2.84919 11.1049 1.96499C11.8734 0.98418 12.8822 0.364902 14.0883 0.0750894C14.149 0.0603245 14.2118 0.0552623 14.2728 0.0426067C14.7849 -0.0645437 14.7264 0.0206704 14.7239 0.423961C14.7159 1.68656 14.2867 2.80194 13.511 3.77979C12.7863 4.6931 11.8684 5.30563 10.7074 5.50643C10.6392 5.51825 10.5693 5.52795 10.5003 5.52753C9.85685 5.52499 9.97734 5.641 9.95349 4.88167Z"
+                                          fill="white"/>
+                                </svg>
+                                <span class="install__button__suptitle">download in </span>
+                            </div>
+                            <p class="install__button__title">AppStore</p>
+                        </button>
+                        <button class="install__button">
+                            <div class="install__button__content">
+                                <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.26083 5.8612C7.10805 5.84222 7.82892 6.12739 8.55188 6.4037C8.78617 6.49313 9.01921 6.58636 9.25015 6.68508C9.85973 6.94536 10.4589 6.93776 11.0739 6.67917C11.8182 6.36616 12.5583 6.0156 13.3603 5.88904C15.5572 5.54228 17.3989 6.18771 18.8164 7.95485C18.9327 8.09955 18.9516 8.19193 18.77 8.32017C17.8336 8.98079 17.1082 9.82956 16.7442 10.9297C16.1371 12.7661 16.3739 14.4893 17.5659 16.038C18.0734 16.6973 18.7206 17.193 19.472 17.5427C19.6197 17.6115 19.5532 17.6967 19.526 17.7819C19.2453 18.669 18.867 19.514 18.3934 20.3109C17.842 21.2385 17.2554 22.1451 16.494 22.9179C15.3798 24.0489 14.1607 24.2632 12.7181 23.5967C12.2303 23.3714 11.7399 23.1529 11.2032 23.0711C10.2472 22.9255 9.33257 23.0639 8.45439 23.4714C7.99878 23.6828 7.53354 23.8654 7.03525 23.9574C6.21062 24.1101 5.5136 23.8397 4.88436 23.3288C4.07521 22.672 3.49199 21.8215 2.92132 20.9648C1.69044 19.1175 0.937775 17.0812 0.589683 14.888C0.481741 14.208 0.421494 13.5229 0.436974 12.8348C0.466261 11.5305 0.683819 10.2641 1.29633 9.09722C2.11552 7.53764 3.34597 6.47668 5.05589 6.02108C5.46674 5.9114 5.88679 5.84686 6.26083 5.8612Z"
+                                          fill="white"/>
+                                    <path d="M9.95349 4.88167C9.98278 3.84898 10.4116 2.84919 11.1049 1.96499C11.8734 0.98418 12.8822 0.364902 14.0883 0.0750894C14.149 0.0603245 14.2118 0.0552623 14.2728 0.0426067C14.7849 -0.0645437 14.7264 0.0206704 14.7239 0.423961C14.7159 1.68656 14.2867 2.80194 13.511 3.77979C12.7863 4.6931 11.8684 5.30563 10.7074 5.50643C10.6392 5.51825 10.5693 5.52795 10.5003 5.52753C9.85685 5.52499 9.97734 5.641 9.95349 4.88167Z"
+                                          fill="white"/>
+                                </svg>
+                                <span class="install__button__suptitle">download in</span>
+                            </div>
+                            <p class="install__button__title">AppStore</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="propaganda__mobile">
+                    <img src="images/Group%2022.png" alt="" class="mobile__image">
+                </div>
+            </div>
+        </div>
+        <div class="sendmail">
+            <h2 class="sendmail__title">FIND A FOODELI STORE NEAR YOU</h2>
+            <h5 class="sendmail__subtitle">see the convenience store address with you most</h5>
+            <div class="sendmail__content">
+                <input class="sendmail__input" type="text">
+                <input class="sendmail__button" type="button" value="submit">
+            </div>
+        </div>
+    </main>
+    <footer>
+<!--        <div class="container">-->
+        <div class="footer__content">
+            <div class="links">
+                <h4>USEFUL LINKS</h4>
+                <ul class="footer__menu__link">
+                    <li class="footer__menu__link">Homepage</li>
+                    <li class="footer__menu__link">Menu</li>
+                    <li class="footer__menu__link">SaleOff</li>
+                    <li class="footer__menu__link">News</li>
+                </ul>
+            </div>
+            <div class="opebntime">
+                <h4>USEFUL LINKS</h4>
+                <ul class="footer__menu__link">
+                    <li class="footer__menu__link">Homepage</li>
+                    <li class="footer__menu__link">Menu</li>
+                    <li class="footer__menu__link">SaleOff</li>
+                    <li class="footer__menu__link">News</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__content">
+            <div class="footer__logotitle">
+            <div class="footer__logo">
+                <img src="images/lgo.png" alt="">
+            </div>
+            <h2>Mc-Donadls</h2>
+            </div>
+            <div class="footer__icon">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+        </div>
+<!--        </div>-->
+    </footer>
+</div>
+</body>
+</html>
