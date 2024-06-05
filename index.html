@@ -8,40 +8,41 @@
     <link rel="stylesheet" href="font/font-awesome/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-largemobile.css">
     <link rel="stylesheet" href="css/media-tablet.css">
     <link rel="stylesheet" href="css/media-laptop.css">
     <link rel="stylesheet" href="css/media-descktop.css">
     <title>FastFood-Delivery</title>
+
 </head>
 <body>
 <div class="container">
-
     <nav>
         <div class="nav__logo">
-            <a href="#"><img src="images/lgo.png" alt=""></a>
+            <a href="/"><img src="images/lgo.png" alt=""></a>
         </div>
         <div class="nav__menu">
             <ul class="nav__menu__lists">
                 <li class="nav__menu__list">
-                    <div class="nav__menu__item">HomePage</div>
+                    <a href="#" class="nav__menu__item">HomePage</a>
                 </li>
                 <li class="nav__menu__list">
-                    <div class="nav__menu__item">Menu</div>
+                    <a href="#" class="nav__menu__item">Menu</a>
                 </li>
                 <li class="nav__menu__list">
-                    <div class="nav__menu__item">Sale Off</div>
+                    <a href="#" class="nav__menu__item">Sale Off</a>
                 </li>
                 <li class="nav__menu__list">
-                    <div class="nav__menu__item">News</div>
+                    <a href="#" class="nav__menu__item">News</a>
                 </li>
                 <li class="nav__menu__list">
-                    <div class="nav__menu__item">Contact</div>
+                    <a href="#" class="nav__menu__item">Contact</a>
                 </li>
             </ul>
         </div>
         <div class="nav__btn">
             <a href="#">Sign-in</a>
-            <a href="#">Logn-in</a>
+            <a href="#">Log-on</a>
         </div>
         <div class="nav__bar">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
@@ -57,9 +58,7 @@
     </nav>
     <header>
         <div class="header__left">
-
             <div class="header__content__title">
-
                 <h1 class="header__title">Order your favourite food</h1>
                 <p class="header__desc">Hamburger has many flavors, have you tried Cheese Beef Hamburger?</p>
             </div>
@@ -80,9 +79,15 @@
             </div>
         </div>
         <div class="header__right">
-            <img src="images/Group%2015.png" alt="">
+            <picture>
+                <source media="(min-width:568px)" srcset="images/burgure__header.png">
+                <source media="(max-width:568px)" srcset="images/burgure__header__mobile.png">
+                <img src="images/burgure__header.png" alt="">
+            </picture>
             <div class="header__message">
-                <div class="message__delivery"></div>
+                <div class="message__delivery">
+                    <span>beautiful choice</span>
+                </div>
             </div>
         </div>
         <div class="header__content__discount show-mobile hidden-laptop">
@@ -101,17 +106,31 @@
             </div>
         </div>
     </header>
+</div>
+
     <main>
+        <div class="container">
         <div class="main__menu">
             <h2 class="main__menu__title">Menu</h2>
             <div class="main__content__menu">
-
-                <button class="main__menu__btn"><span class="fa fa-coffee"></span><span>Best Seller </span></button>
-                <button class="main__menu__btn"><span class="fa fa-solid fa-coffee"></span><span>Hamberger</span>
+                <button class="main__menu__btn">
+                    <span class="fa fa-coffee"></span>
+                    <span>Best Seller </span>
                 </button>
-                <button class="main__menu__btn"><span class="fa fa-solid fa-coffee"></span><span>Drink</span></button>
-                <button class="main__menu__btn"><span class="fa fa-solid fa-coffee"></span><span>Dessert</span></button>
-                <button class="main__menu__btn"><span class="fa fa-coffee"></span><span>Fried-Chicken</span></button>
+                <button class="main__menu__btn">
+                    <span class="fa fa-coffee"></span>
+                    <span>Hamberger</span>
+                </button>
+                <button class="main__menu__btn">
+                    <span class="fa fa-coffee"></span>
+                    <span>Drink</span></button>
+                <button class="main__menu__btn">
+                    <span class="fa fa-coffee"></span>
+                    <span>Dessert</span></button>
+                <button class="main__menu__btn">
+                    <span class="fa fa-coffee"></span>
+                    <span>Fried-Chicken</span>
+                </button>
             </div>
         </div>
         <div class="products">
@@ -428,6 +447,7 @@
                 </div>
             </div>
         </div>
+        </div>
         <div class="propaganda">
             <div class="curve">
                 <div>
@@ -470,6 +490,7 @@
                 </div>
             </div>
         </div>
+        <div class="container">
         <div class="sendmail">
             <h2 class="sendmail__title">FIND A FOODELI STORE NEAR YOU</h2>
             <h5 class="sendmail__subtitle">see the convenience store address with you most</h5>
@@ -478,12 +499,15 @@
                 <input class="sendmail__button" type="button" value="submit">
             </div>
         </div>
+        </div>
     </main>
+
+
     <footer>
-<!--        <div class="container">-->
+        <!--        <div class="container">-->
         <div class="footer__content">
             <div class="links">
-                <h4>USEFUL LINKS</h4>
+                <h3>USEFUL LINKS</h3>
                 <ul class="footer__menu__link">
                     <li class="footer__menu__link">Homepage</li>
                     <li class="footer__menu__link">Menu</li>
@@ -492,7 +516,7 @@
                 </ul>
             </div>
             <div class="opebntime">
-                <h4>USEFUL LINKS</h4>
+                <h3>USEFUL LINKS</h3>
                 <ul class="footer__menu__link">
                     <li class="footer__menu__link">Homepage</li>
                     <li class="footer__menu__link">Menu</li>
@@ -503,10 +527,10 @@
         </div>
         <div class="footer__content">
             <div class="footer__logotitle">
-            <div class="footer__logo">
-                <img src="images/lgo.png" alt="">
-            </div>
-            <h2>Mc-Donadls</h2>
+                <div class="footer__logo">
+                    <img src="images/lgo.png" alt="">
+                </div>
+                <h2>Mc-Donadls</h2>
             </div>
             <div class="footer__icon">
                 <span class="fa fa-star checked"></span>
@@ -514,8 +538,16 @@
                 <span class="fa fa-star checked"></span>
             </div>
         </div>
-<!--        </div>-->
+        <!--        </div>-->
     </footer>
-</div>
+<script async>
+    document.querySelector(".nav__bar").addEventListener('click', function () {
+        document.querySelector(".nav__menu").style.transform = "translateX(0%)";
+    })
+    document.querySelector(".container").addEventListener('click', function () {
+        // document.querySelector(".nav__menu").style.transform = "translateX(-100%)";
+    })
+
+</script>
 </body>
 </html>

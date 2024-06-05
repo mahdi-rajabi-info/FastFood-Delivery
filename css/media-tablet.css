@@ -1,5 +1,9 @@
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 568px) {
+    body{
+        background: #000;
+    }
     .container {
+
         max-width: 1070px;
         padding: 0 2rem;
     }

@@ -70,7 +70,7 @@ img {
 
 nav {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(2, auto);
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
@@ -78,23 +78,23 @@ nav {
 
 .nav__logo {
     width: 45px;
-    height: 45px;
+    height: auto;
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 992px) {
     .nav__menu {
-        /*display: none;*/
         transform: translateX(-100%);
-
+        transition: transform 500ms linear;
         position: fixed;
         top: 0;
         left: 0;
-        background: #e2e2e2;
-        color: #7d7c7c;
+        background: #e3e3e3;
+        color: #7D7C7C;
         min-width: 200px;
         height: 100%;
         padding-top: 3rem;
         box-shadow: 2px 2px 10px #333;
+        z-index: 5;
     }
 
     .nav__menu__list:first-child .nav__menu__item {
@@ -105,45 +105,33 @@ nav {
         padding: 1rem;
         margin: .5rem 0;
         cursor: pointer;
+        display: block;
+        color: #7D7C7C;
         font-size: 1.2rem;
+        transition: background 300ms linear;
+    }
+
+    .nav__menu__item:hover {
+        background: #bebebe;
     }
 }
 
 .nav__btn {
-    display: flex;
-    gap: 6px;
-}
-
-.nav__btn a {
-    padding: 6px;
-    border: 1px solid #C90000;
-    border-radius: 100px;
-    color: #C90000;
-}
-
-.nav__btn a:last-child {
-    color: #FFF;
-    background: #C90000;
+    display: none;
 }
 
 .nav__bar {
     cursor: pointer;
     font-size: 2rem;
-    color: #555;
+    color: #7D7C7C;
 }
 
 .nav__bar:hover {
     opacity: .8;
 }
 
-.nav__bar:active .nav__menu {
-    transform: translateX(0);
-    transition: transform 1s linear;
-}
-
 /* ------------------------------Finish Nav------------------------ */
 header {
-    padding: 1rem 0;
     margin: 0 auto;
 }
 
@@ -154,6 +142,7 @@ header {
 
 .header__title {
     color: #C90000;
+    /*padding: 0 .5rem;*/
     font-weight: 600;
     line-height: 3rem;
     letter-spacing: 1px;
@@ -161,12 +150,12 @@ header {
 
 .header__desc {
     line-height: 1.5rem;
-    padding: 0 1rem;
-    color: #8d8b8b;
+    padding: 0 .5rem;
+    color: #7D7C7C;
 }
 
 .header__right {
-    max-width: 350px;
+    max-width: 400px;
     margin: 0 auto;
     position: relative;
 }
@@ -188,7 +177,6 @@ header {
     padding: 1rem 0;
 }
 
-
 .show-mobile {
     display: block;
 }
@@ -200,7 +188,6 @@ header {
 .header__content__discount {
     margin: 6rem auto 0;
     max-width: 300px;
-
 }
 
 .total-order {
@@ -239,31 +226,30 @@ header {
 
 /*----------------------------------------Finitsh Header------------------------------------*/
 
-main{
+main {
     padding: 2rem 0;
-    /*border: 1px solid #000;*/
 }
 
-.main__content__menu{
-    /*border: 1px solid #000;*/
+.main__content__menu {
     display: grid;
     justify-content: center;
     gap: 10px;
     padding: 1rem 0;
 }
+
 .main__menu__title {
     text-align: center;
     font-size: 2rem;
     color: #C90000;
 }
 
-.main__menu__btn{
+.main__menu__btn {
     padding: .5rem 0;
     border-radius: 100px;
-    width: 180px;
+    width: 170px;
     cursor: pointer;
     display: flex;
-    gap: 10px ;
+    gap: 10px;
     justify-content: center;
     background: #E3E3E3;
     color: #504F4F;
@@ -272,16 +258,17 @@ main{
 .products {
     padding: 1rem 0;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
     gap: 20px 0;
+    overflow: auto;
 }
 
 .product {
-    max-width: 370px;
+    max-width: 300px;
     width: 100%;
     border: 2px solid #E3E3E3;
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1rem .5rem;
     margin: 0 auto;
 }
 
@@ -298,17 +285,17 @@ main{
 
 .product__img {
     width: auto;
-    max-width: 100%;
+    max-width: 70%;
     display: block;
     margin: 0 auto;
 }
 
 .background_khaki {
     position: absolute;
-    top: 50%;
+    top: 30%;
     background: linear-gradient(#FFFDE6, #FFFDE6);
     width: 100%;
-    height: 50%;
+    height: 70%;
     z-index: -1;
 
 }
@@ -337,7 +324,7 @@ main{
 }
 
 .star_number {
-    color: #7d7c7c;
+    color: #868686;
 }
 
 .product__footer {
@@ -349,7 +336,7 @@ main{
 
 .product__price {
     font-size: 1.5rem;
-    color: #333;
+    color: #555;
     font-weight: bold;
 }
 
@@ -369,43 +356,35 @@ main{
 
 
 /*------------------------Finish Product------------------------*/
-.banners{
+.banners {
+    margin-top: 50px;
     display: grid;
     gap: 30px;
 }
-.banner{
 
+.banner {
     border: 1px solid #E3E3E3;
-    max-width: 370px;
+    max-width: 360px;
     width: 100%;
     height: 300px;
-    border-radius:20px;
+    border-radius: 20px;
     position: relative;
     overflow: hidden;
-    padding: 1.5rem 0 0 1rem;
+    padding: 1.5rem 0 0 .5rem;
     margin: 0 auto;
     z-index: -2;
     background: #F1F1F1;
-    /*padding: 10px;*/
-} 
+}
 
-.banner__img{
-position: absolute;
-top: 50%;
-right: 0;
-transform: translate(20%,-50%);
-z-index: -1;
+.banner__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(20%, -50%);
+    z-index: -1;
 }
-.banner__img img {
-    display: block;
-}
-.banner__content{
-    /* border: 1px solid #000; */
-    width: 100%;
 
- 
-}
-.banner_content__lable{
+.banner_content__lable {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 20px;
@@ -413,81 +392,91 @@ z-index: -1;
     align-items: center;
     color: #777;
 }
-.line{
+
+.line {
     border: 1px solid red;
 }
 
-.banner__title{
+.banner__title {
     font-size: 1.7rem;
     margin: 20px 0;
     color: #C90000;
 }
-.banner__desc{
+
+.banner__desc {
     max-width: 180px;
     width: auto;
     line-height: 25px;
     color: #777;
     margin-bottom: 30px;
 }
-.banner__part__price{
-/* font-size: 2rem; */
-font-weight: bold;
-}
-.banner__offer-price{
-    color: #777;    
-    margin-right: 5px;
-}
-.banner__price{
-color: #C90000;
-font-size: 1.5rem;
-}
-.banner__btn{
-background: #444;
-color: #FFF;
-border-radius: 20px;
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-width: 140px;
-padding:   5px 0;
-cursor: pointer; 
-margin-top: 20px;
+
+.banner__part__price {
+    font-weight: bold;
 }
 
-.propaganda{
-    text-align: center;
+.banner__offer-price {
+    color: #777;
+    margin-right: 5px;
 }
-.curve{
+
+.banner__price {
+    color: #C90000;
+    font-size: 1.5rem;
+}
+
+.banner__btn {
+    background: #444;
+    color: #FFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 140px;
+    padding: 5px 0;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.propaganda {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.curve {
     width: 100%;
     height: 100%;
     background: #E3E3E3;
-    border-radius: 500px 500px 0 0;
+    border-radius: 400px 400px 0 0;
     padding-top: 100px;
 
 }
 
-.propaganda__first__title{
+.propaganda__first__title {
     color: #7D7C7C;
 }
-.propaganda__second__title{
+
+.propaganda__second__title {
     padding: 15px 0;
     color: #C90000;
 }
-.propaganda__subtitle{
+
+.propaganda__subtitle {
     padding: 0 5px;
-    color:#323232;
+    color: #323232;
     font-size: .7rem;
     line-height: 20px;
 }
-.install__buttons{
+
+.install__buttons {
     width: auto;
     max-width: 300px;
     display: grid;
     grid-template-columns: auto auto;
     margin: 20px auto;
-    /*border: 1px solid #000;*/
 }
-.install__button{
+
+.install__button {
     display: block;
     background: #555;
     color: #FFF;
@@ -496,125 +485,115 @@ margin-top: 20px;
     width: 100%;
     max-width: 200px;
 }
-.install__button__content{
+
+.install__button__content {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.install__button svg{
-    /*padding: 10px;*/
+
+.install__button__suptitle {
+    font-size: .7rem;
 }
 
-.install__button__suptitle{
-font-size: .7rem;
-}
-.install__button__title{
+.install__button__title {
     font-size: .8rem;
     font-weight: 800;
     text-align: center;
     padding-left: 20px;
 }
 
-.propaganda__mobile{
+.propaganda__mobile {
     margin: 0 auto;
     max-width: 300px;
     height: 100%;
 }
-.mobile__image{
-    display: block;
 
-}
-.sendmail{
+
+.sendmail {
     width: 100%;
     max-width: 1100px;
     height: 300px;
     background: #333;
     border-radius: 20px;
-    margin: 100px auto;
+    margin: 2rem auto 0;
 }
 
-.sendmail__title{
-    border: 1px solid #FFF;
+.sendmail__title {
     text-align: center;
-    padding: 50px 0 10px;
-    font-size: 30px;
+    padding: 50px 10px 10px;
+    font-size: 1.5rem;
     color: #FFF;
 }
-.sendmail__subtitle{
+
+.sendmail__subtitle {
     color: #FFF;
-    border: 1px solid #FFF;
     text-align: center;
+    font-size: .8rem;
+    padding: 0 30px;
 }
-.sendmail__content{
-    /*display: flex;*/
+
+.sendmail__content {
     margin: 50px auto 0;
     border-radius: 20px;
     overflow: hidden;
     padding: 0 20px;
     width: 100%;
     max-width: 400px;
-    border: 1px solid #FFF;
     position: relative;
-
 }
-.sendmail__input{
+
+.sendmail__input {
+    background: #FFC300;
     width: 100%;
     padding: 10px;
     border-radius: 20px;
-
 }
-.sendmail__button{
+
+.sendmail__button {
     border-radius: 20px;
     display: block;
     position: absolute;
     top: 0;
     right: 20px;
     padding: 10px;
-
-
+    background: #FFEAE6;
 }
 
-footer{
+footer {
     width: 100%;
-    padding: 0 2rem;
-    /*height: 1000px;*/
+    padding: 1rem;
     background: khaki;
     display: grid;
-    /*justify-content: center;*/
 }
 
-.footer__content:first-child{
+.footer__content:first-child {
     display: grid;
     grid-template-columns: auto auto;
 }
-.links{
-    border: 1px solid #000;
-}
-.footer__menu__link{
 
+.links h3 , .opebntime h3{
+    padding: 5px 0;
 }
-.footer__menu__link{
+.footer__menu__link {
+    padding: 5px 0;
+}
 
-}
-.opebntime{
-    border: 1px solid #000;
-}
-.footer__logotitle{
+.footer__logotitle {
     display: grid;
-grid-template-columns: 50px auto;
-justify-content: center;
+    grid-template-columns: 50px auto;
+    justify-content: center;
     align-items: center;
     gap: 20px;
-    border: 1px solid red;
 }
-.footer__logo{
+
+.footer__logo {
     width: 100%;
 }
-.footer__icon{
+
+.footer__icon {
     display: flex;
     justify-content: center;
-    border: 1px solid #000;
-    gap: 30px;
-    /*width:200px;*/
+    gap: 10px;
 }
 
