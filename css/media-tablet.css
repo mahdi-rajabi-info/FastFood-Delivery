@@ -1,100 +1,23 @@
 @media screen and (min-width: 568px) {
     body{
-        background: #000;
+        background: #FFF;
     }
     .container {
-
         max-width: 1070px;
-        padding: 0 2rem;
     }
-
-    .nav__menu {
-        width: 300px;
-    }
-
-    .nav__btn {
-        gap: 12px;
-    }
-
-    .nav__btn a {
-        padding: 7px 16px 8px 16px;
-    }
-
-    /* ------------------------------Finish Nav------------------------ */
-    .header__right {
-        max-width: 450px;
-    }
-
-    .header__discount__number a {
-        padding: .7rem 1rem;
-    }
-
-    .header__discount__btn {
-        padding: .7rem 1.5rem;
-    }
-
-    /*  ----------------------------------------Finish Header-------------------------------------- */
-    .main__content__menu {
+    .products{
         grid-template-columns: auto auto;
-        gap: 20px;
-        padding: 2rem 0;
-    }
-
-
-    .products {
-        grid-template-columns: auto auto;
-        width: 100%;
-        gap: 20px;
+        gap: 30px 20px;
+        margin: 0 auto;
     }
     .product{
-        width: 100%;
-        max-width: 370px;
+        max-width: 430px;
     }
-
     .banners{
 
-        /*grid-template-columns: repeat(1,auto);*/
     }
     .banner{
         max-width: 100%;
     }
-    .propaganda{
-        text-align: left;
-        margin-top: 50px;
-
-
-    }
-    .curve{
-        border-radius: 0 500px 500px 0 ;
-        padding-top: 30px;
-        padding-left: 20px;
-        overflow: hidden;
-
-
-    }
-
-    .propaganda__subtitle{
-        padding: 0 30px 0 0;
-
-    }
-
-    .install__buttons{
-        margin: 20px 0;
-        gap: 10px;
-    }
-
-    .propaganda__mobile{
-        margin: 0 0;
-    }
-    footer{
-        width: 100%;
-        /*padding: 1rem;*/
-        /*height: 1000px;*/
-        background: khaki;
-        display: grid;
-        /*justify-content: center;*/
-    }
-
-
 }
 

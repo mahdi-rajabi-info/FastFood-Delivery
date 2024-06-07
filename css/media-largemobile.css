@@ -49,6 +49,7 @@
         gap: 20px;
         padding: 2rem 0;
     }
+
     .main__menu__btn {
         width: 160px;
     }
@@ -67,21 +68,18 @@
         padding: 1.5rem 0 0 1.5rem;
     }
 
-    .banner__img{
+    .banner__img {
         width: 60%;
     }
 
     .install__buttons {
-     gap: 10px;
+        gap: 10px;
     }
 
     footer {
         width: 100%;
         background: khaki;
         display: grid;
-        /*justify-content: center;*/
     }
-
-
 }
 
